@@ -19,7 +19,7 @@ a:hover {
 }
 
 /* Navbar styles */
-nav.sidebar {
+.navbar {
   background-color: #121212;
   color: #fff;
 }
