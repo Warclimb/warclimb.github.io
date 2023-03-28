@@ -1,60 +1,46 @@
 body {
-  background-color: #0d1116;
-  color: #fff;
-  font-family: Arial, sans-serif;
+    background-color: #212529;
+    color: #f8f9fa;
+  }
+
+.div-center {
+  width: 400px;
+  height: 400px;
+  background-color: #1d1e22;
+  color: #f8f9fa;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 0em 2em;
+  display: table;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+div.content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
 }
-
-a:hover {
-  color: #ccc;
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
-
-/* Navbar styles */
-.navbar {
-  background-color: #121212;
-  color: #fff;
-}
-
-navbar a {
-  color: #fff;
-}
-
-/* button styles */
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:hover {
-  background-color: #0062cc;
-  border-color: #005cbf;
-}
-
-.btn-primary:focus,
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.btn-secondary {
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
-.btn-secondary:hover {
-  background-color: #5a6268;
-  border-color: #545b62;
-}
-
-.btn-secondary:focus,
-.btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #1d1e22;
 }
