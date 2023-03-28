@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Mi Portafolio</title>
-    <!-- Importa los estilos de Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-7WJhkcC9z6U3+b6Pvz8NXIyGG+l+irCUq3iFjKk/uG40ZtwX0FKIuzDsl5ABiJ5W5sdMPtHw0yhDxgkKPjKQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Importa tus estilos personalizados -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Agrega un contenedor para la barra lateral -->
-    <div id="sidebar-container"></div>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <ul class="list-unstyled">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
 
-    <!-- Agrega un contenedor para el contenido principal -->
-    <div id="main-container"></div>
+    <!-- Main content -->
+    <main class="main-content">
+      <div class="container">
+        <h1>Mi portfolio</h1>
+        <p>Bienvenido a mi portfolio. Aquí podrás encontrar algunos de mis proyectos y saber un poco más sobre mí.</p>
 
-    <!-- Agrega un contenedor para los proyectos -->
-    <div id="projects-container"></div>
-
-    <!-- Importa los scripts de React y ReactDOM -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js" integrity="sha512-UyTjzR+H0VHz06K2uaie5g5ZuL5q3E7m+iKjJpV+fIyCOwz+e7YLYO/jvtl6hkgU2kJC9OcO33rPRKj6qu1RdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js" integrity="sha512-Lh7k9rMNCU6F+NGy2I63NlF+D4eJojf4UDxI0T+TpXgs8O/vWkTc+zll+Abt0m3q8rm0mfoJcFFRZMjE7Xt8Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Importa tu archivo script.js -->
-    <script src="/assets/script.js"></script>
-  </body>
-</html>
+        <!-- Projects section -->
+        <div class="projects-section">
+          <h2>Proyectos</h2>
+          <div class="row">
+            <!-- Componente ProjectsSection -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  alt="Proyecto 1"
+                  class="card-img-top rounded"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Proyecto 1</h5>
+                  <p class="card-text">Descripción del proyecto 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  alt="Proyecto 2"
+                  class="card-img-top rounded"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Proyecto 2</h5>
+                  <p class="card-text">Descripción del proyecto 2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  alt="Proyecto 3"
+                  class="card-img-top rounded"
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Proyecto 3</h5>
+                  <p class="card-text">Descripción del proyecto 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
