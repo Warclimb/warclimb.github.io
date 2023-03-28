@@ -33,6 +33,15 @@ a:hover {
   background-color: #666;
 }
 
+.card-img-overlay {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
 #sidebar {
   float: left;
   width: 25%;
